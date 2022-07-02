@@ -15,7 +15,7 @@ namespace Shape
                     break;
                 case 1:
                     Console.WriteLine("Enter radius: \n");
-                    double r = Console.Read();
+                    double r = Convert.ToDouble(Console.ReadLine());
                     Circle c = new Circle();
                     c.Radius = r;
                     double cArea= c.getArea();
@@ -27,11 +27,11 @@ namespace Shape
                 case 2:
                     Triangle t = new Triangle();
                     Console.WriteLine("\nEnter side 1:");
-                    double s1 = Console.Read();
+                    double s1 = Convert.ToDouble(Console.ReadLine());
                     Console.WriteLine("\nEnter side 2:");
-                    double s2 = Console.Read();
+                    double s2 = Convert.ToDouble(Console.ReadLine());
                     Console.WriteLine("\nEnter side 3:");
-                    double s3 = Console.Read();
+                    double s3 = Convert.ToDouble(Console.ReadLine());
                     t.A=s1;
                     t.B=s2;
                     t.C = s3;
@@ -41,9 +41,9 @@ namespace Shape
                 case 3:
                     Rectangle rec = new Rectangle();
                     Console.WriteLine("\nEnter lenght:");
-                    double l=Console.Read();
+                    double l= Convert.ToDouble(Console.ReadLine());
                     Console.WriteLine("\nEnter Width:");
-                    double w = Console.Read();
+                    double w = Convert.ToDouble(Console.ReadLine());
                     rec.Length=l;
                     rec.Width = w;
                     Console.WriteLine("\nThe Area is: " + rec.getArea());
